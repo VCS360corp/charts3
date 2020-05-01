@@ -1,0 +1,28 @@
+body {
+  background: #222;
+  color: #eaeaea;
+}
+
+h1 {
+  background: #26466d;
+  border-radius: 2px;
+  font-size: 14px;
+  margin: 0px;
+  padding: 10px 8px;
+  width: 215px;
+}
+
+span {
+  background: #003f87;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  padding: 6px;
+}
+
+#graph {
+  display: inline-block;
+  height: 250px;
+  margin: 0px;
+  width: 600px;
+}

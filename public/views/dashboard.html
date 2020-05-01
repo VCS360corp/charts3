@@ -1,0 +1,43 @@
+[[define "dashboard"]]
+<html>
+
+<head>
+  <title>[[.PageTitle]]</title>
+  <link rel="stylesheet" href="[[.AppURL]]/assets/css/app.css">
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164492093-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164492093-1');
+</script>
+
+</head>
+
+<body>
+  <h1><span>Donut Chart</span></h1>
+
+  <div id="graph"></div>
+  <button id="cats" onclick="loadCats()">Cats</button>
+  <button id="dogs" onclick="loadDogs()">Dogs</button>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script
+    src="https://rawgithub.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="https://rawgithub.com/DmitryBaranovskiy/g.raphael/master/g.raphael.js"></script>
+  <script src="https://rawgithub.com/DmitryBaranovskiy/g.raphael/master/g.pie.js"></script>
+
+  <script>
+    window.app = {
+      url: "[[.AppURL]]"
+    }
+
+  </script>
+  <script src="[[.AppURL]]/assets/js/app.js"></script>
+</body>
+
+</html>
+[[end]]
